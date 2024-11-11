@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./script.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Parisienne&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="introductory" style="min-height: 100vh;" class="d-flex flex-wrap justify-content-center">
+        <div class="col-md-12">
+            <nav class="navbar bg-success justify-content-center" data-bs-theme="dark">
+                <ul class="nav justify-content-center gap-2">
+                    <li class="nav-item">
+                        <a type="button" class="btn btn-success btn-outline nav-link active" aria-current="page"
+                            href="#introductory">Jump to:
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link btn btn-success text-light" href="#information">About Seven Falls <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-info-square" viewBox="0 0 16 16">
+                                <path
+                                    d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-success text-light" href="#sites">Things To Do <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-success text-light" href="#location">Location <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-pin-map" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z" />
+                                <path fill-rule="evenodd"
+                                    d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-success text-light" href="#travel">Plan your Visit <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-luggage" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.5 1a.5.5 0 0 0-.5.5V5h-.5A1.5 1.5 0 0 0 0 6.5v7a1.5 1.5 0 0 0 1 1.415v.335a.75.75 0 0 0 1.5 0V15H4v-1H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5V7h1v-.5A1.5 1.5 0 0 0 6.5 5H6V1.5a.5.5 0 0 0-.5-.5zM5 5H3V2h2z" />
+                                <path
+                                    d="M3 7.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0zM11 6a1.5 1.5 0 0 1 1.5 1.5V8h2A1.5 1.5 0 0 1 16 9.5v5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 14.5v-5A1.5 1.5 0 0 1 6.5 8h2v-.5A1.5 1.5 0 0 1 10 6zM9.5 7.5V8h2v-.5A.5.5 0 0 0 11 7h-1a.5.5 0 0 0-.5.5M6 9.5v5a.5.5 0 0 0 .5.5H7V9h-.5a.5.5 0 0 0-.5.5m7 5.5V9H8v6zm1.5 0a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5H14v6z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-success text-light" href="#gallery">Image Gallery <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-images" viewBox="0 0 16 16">
+                                <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                <path
+                                    d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2M14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1M2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="headertext" class="px-4 pt-5 my-5 text-center">
+            <h1 class="display-1">Seven Falls</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="fw-bold text-body-emphasis mb-4">One of Colorado's natural wonders. Seven waterfalls cascading
+                    into
+                    one another. Truly beautiful site to behold!</p>
+            </div>
+            <div class="overflow-hidden">
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+                <div id="nav" class="d-flex flex-column gap-2 simple-list-nav-scrollspy text-center sticky-top">
+                    <a class="p-1 rounded btn btn-light btn-outline nav-link text-dark" href="#introductory"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-house" viewBox="0 0 16 16">
+                            <path
+                                d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+                        </svg></a>
+                    <a class="p-1 rounded btn btn-light btn-outline nav-link text-dark" href="#information"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-info-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                        </svg></a>
+                    <a class="p-1 rounded btn btn-light btn-outline nav-link text-dark" href="#sites"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                            <path
+                                d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0" />
+                        </svg></a>
+                    <a class="p-1 rounded btn btn-light btn-outline nav-link text-dark" href="#location"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-pin-map" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z" />
+                            <path fill-rule="evenodd"
+                                d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                        </svg></a>
+                    <a class="p-1 rounded btn btn-light btn-outline nav-link text-dark" href="#travel"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-luggage" viewBox="0 0 16 16">
+                            <path
+                                d="M2.5 1a.5.5 0 0 0-.5.5V5h-.5A1.5 1.5 0 0 0 0 6.5v7a1.5 1.5 0 0 0 1 1.415v.335a.75.75 0 0 0 1.5 0V15H4v-1H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5V7h1v-.5A1.5 1.5 0 0 0 6.5 5H6V1.5a.5.5 0 0 0-.5-.5zM5 5H3V2h2z" />
+                            <path
+                                d="M3 7.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0zM11 6a1.5 1.5 0 0 1 1.5 1.5V8h2A1.5 1.5 0 0 1 16 9.5v5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 14.5v-5A1.5 1.5 0 0 1 6.5 8h2v-.5A1.5 1.5 0 0 1 10 6zM9.5 7.5V8h2v-.5A.5.5 0 0 0 11 7h-1a.5.5 0 0 0-.5.5M6 9.5v5a.5.5 0 0 0 .5.5H7V9h-.5a.5.5 0 0 0-.5.5m7 5.5V9H8v6zm1.5 0a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5H14v6z" />
+                        </svg></a>
+                    <a class="p-1 rounded btn btn-light btn-outline nav-link text-dark" href="#gallery"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-images" viewBox="0 0 16 16">
+                            <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                            <path
+                                d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2M14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1M2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1z" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="col-11" id="content">
+                <div data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="0" data-bs-smooth-scroll="true"
+                    class="scrollspy-nav-example" tabindex="0">
+                    <div class="b-example-divider"></div>
+                    <div id="information" class="container col-xxl-12 px-4 py-5">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                            <div class="col-10 col-sm-8 col-lg-6">
+                                <img src="./images/waterfall.jpg" class="d-block mx-lg-auto img-fluid"
+                                    alt="View of the waterfalls in the distance from a bridge" width="700" height="500"
+                                    loading="lazy">
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Seven Falls</h2>
+                                <p class="lead">The history of Seven Falls dates back to the late 1800s when Nathaniel
+                                    Colby, a pioneer, discovered the falls and was captivated by their beauty. The
+                                    property was later developed by James Hull, who built a series of steps and pathways
+                                    to make the falls accessible to the public. Over the years, Seven Falls has been
+                                    carefully preserved and maintained, allowing visitors to experience the natural
+                                    wonder in its pristine form. Today, it is managed by the Broadmoor, a luxury resort
+                                    that offers additional amenities and services to enhance the visitor experience.</p>
+                                <p class="lead">Whether you're an avid hiker, a nature lover, or simply seeking a
+                                    memorable outdoor experience, Seven Falls is a must-visit destination in Colorado.
+                                    Its stunning waterfalls, breathtaking scenery, and diverse recreational
+                                    opportunities make it a true gem of the Rocky Mountains.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-example-divider "></div>
+                    <div id="sites" class="px-4 py-5">
+                        <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Things to do</h2>
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                            <div class="col">
+
+                                <div class="card h-100">
+                                    <img src="./images/staircase.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hiking</h5>
+                                        <p class="card-text">What better way to enjoy nature than a nature walk? There
+                                            is
+                                            plenty to see here. From the green forrests, cliffs, rivers, and of course
+                                            the
+                                            famous seven waterfalls!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./images/cloudcamp.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Enjoy the Scenery</h5>
+                                        <p class="card-text">Are you a nature lover? Or do you want to just simply get
+                                            away
+                                            from the noise of city life? Well Seven Falls can help you reach inner peace
+                                            with its wonderfull scenery. Stay at the Broadmoor, where luxury meets
+                                            nature!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="./images/zipline.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ziplining</h5>
+                                        <p class="card-text">Are you an adrenaline junkie? Do you like to feel the rush
+                                            from
+                                            zooming across the air with a beautiful sky view of nature? Near Seven Falls
+                                            is
+                                            one of the world's top ziplines!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-example-divider px-4 py-5"></div>
+                    <div id="location" class=" px-4 py-5">
+                        <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Location</h2>
+                        <div class="card">
+                            <div class="card-header">
+                                Where luxury meets nature: The Broadmoor
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Parking Address</h5>
+                                <p class="card-text">1045 Lower Gold Camp, Rd Colorado Springs, CO 80905</p>
+                                <p class="card-text">For those who will be traveling by car, there is no parking
+                                    available at Seven Falls. You may park at the Norris Penrose Event Center, however.
+                                    We have a shuttle that will pick you up free of charge.</p>
+                                <a href="https://www.google.com/maps/place/Norris+Penrose+Event+Center/@38.8280754,-104.8514318,1708m/data=!3m1!1e3!4m6!3m5!1s0x8713452ab27d3721:0xa91f7aaf2b6e1959!8m2!3d38.8221113!4d-104.8452887!16s%2Fm%2F027x2xg?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D"
+                                    class="btn btn-success">Parking Directions</a>
+                                <a href="https://www.broadmoor.com/" class="btn btn-primary">Book at The Broadmoor</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="travel" class="container col-xxl-12 px-4 py-5">
+                        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                            <div class="col-10 col-sm-8 col-lg-6">
+                                <img src="./images/camp.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                                    width="700" height="500" loading="lazy">
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Plan your Visit</h2>
+
+                                <h4>May 22 – August 11</h4>
+                                <p class="lead">Open: Wednesday, Thursday, Friday, Saturday, Sunday, Monday // 9 a.m. to
+                                    8 p.m.</p>
+                                <p class="lead">Closed: Tuesday</p>
+
+                                <h4>August 12 – September 2</h4>
+                                <p class="lead">Open: Wednesday, Thursday, Friday, Saturday, Sunday, Monday // 10 a.m.
+                                    to 7 p.m.</p>
+                                <p class="lead">Closed: Tuesday</p>
+
+                                <h4>September 5 – October 21</h4>
+                                <p class="lead">Open: Thursday, Friday, Saturday, Sunday, Monday // 10 a.m. to 7 p.m.
+                                </p>
+                                <p class="lead">Closed: Tuesday, Wednesday</p>
+
+                                <h4>October 25 – December 1</h4>
+                                <p class="lead">Open: Friday & Saturday // 10 a.m. to 7 p.m. | Sunday // 10 a.m. to 6
+                                    p.m.</p>
+                                <p class="lead">Closed: Monday, Tuesday, Wednesday, Thursday</p>
+
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                    <a href="https://www.sevenfalls.com/visit/purchase-tickets" type="button"
+                                        class="btn btn-success btn-lg px-4 me-md-2">Order your tickets here!</a>
+                                    <a href="https://www.google.com/maps/place/Norris+Penrose+Event+Center/@38.8225271,-104.847177,427m/data=!3m1!1e3!4m14!1m7!3m6!1s0x8713452ab27d3721:0xa91f7aaf2b6e1959!2sNorris+Penrose+Event+Center!8m2!3d38.8221113!4d-104.8452887!16s%2Fm%2F027x2xg!3m5!1s0x8713452ab27d3721:0xa91f7aaf2b6e1959!8m2!3d38.8221113!4d-104.8452887!16s%2Fm%2F027x2xg?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D"
+                                        type="button" class="btn btn-outline-success btn-lg px-4">Where to park</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="gallery" class="carousel slide">
+                        <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Image Gallery</h2>
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#gallery" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#gallery" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#gallery" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#gallery" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#gallery" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#gallery" data-bs-slide-to="5"
+                                aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#gallery" data-bs-slide-to="6"
+                                aria-label="Slide 7"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/cascades.jpg" class="d-block w-100 "
+                                    alt="view of the end of the staircase and waterfalls">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/cliffside.jpg" class="d-block w-100"
+                                    alt="view of the trail and cliffs">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/flower.jpg" class="d-block w-100"
+                                    alt="red flower with water running in background">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/rocks.jpg" class="d-block w-100"
+                                    alt="river bank with rocks at the bottom">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/cavern.jpg" class="d-block w-100" alt="cavern on a cliffside">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/tree.jpg" class="d-block w-100" alt="tree with red leaves">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/trees on cliffside.jpg" class="d-block w-100"
+                                    alt="trees growing on a cliffside">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#gallery"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#gallery"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="text-center">
+                        <p class="lead text-center text-body-secondary">
+                            Photography courtesy of Lucero "Rayito" Alvarez</p>
+                        <p class="text-body-secondary"><a href="https://www.instagram.com/rayito.alvarez/" class="text-body-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                </svg> Follow her on Instagram</a></p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-3 my-4 border-top">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Back to top <svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house" viewBox="0 0 16 16">
+                        <path
+                            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+                    </svg></a></li>
+            <li class="nav-item"><a href="#information" class="nav-link px-2 text-body-secondary">About Seven Falls <svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-info-square" viewBox="0 0 16 16">
+                        <path
+                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                        <path
+                            d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                    </svg></a></li>
+            <li class="nav-item"><a href="#sites" class="nav-link px-2 text-body-secondary">Things To Do <svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                        <path
+                            d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0" />
+                    </svg></a></li>
+            <li class="nav-item"><a href="#location" class="nav-link px-2 text-body-secondary">Location <svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-pin-map" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z" />
+                        <path fill-rule="evenodd"
+                            d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                    </svg></a></li>
+            <li class="nav-item"><a href="#travel" class="nav-link px-2 text-body-secondary">Plan Your Visit <svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-luggage" viewBox="0 0 16 16">
+                        <path
+                            d="M2.5 1a.5.5 0 0 0-.5.5V5h-.5A1.5 1.5 0 0 0 0 6.5v7a1.5 1.5 0 0 0 1 1.415v.335a.75.75 0 0 0 1.5 0V15H4v-1H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5V7h1v-.5A1.5 1.5 0 0 0 6.5 5H6V1.5a.5.5 0 0 0-.5-.5zM5 5H3V2h2z" />
+                        <path
+                            d="M3 7.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0zM11 6a1.5 1.5 0 0 1 1.5 1.5V8h2A1.5 1.5 0 0 1 16 9.5v5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 14.5v-5A1.5 1.5 0 0 1 6.5 8h2v-.5A1.5 1.5 0 0 1 10 6zM9.5 7.5V8h2v-.5A.5.5 0 0 0 11 7h-1a.5.5 0 0 0-.5.5M6 9.5v5a.5.5 0 0 0 .5.5H7V9h-.5a.5.5 0 0 0-.5.5m7 5.5V9H8v6zm1.5 0a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5H14v6z" />
+                    </svg></a></li>
+            <li class="nav-item"><a href="#gallery" class="nav-link px-2 text-body-secondary">Image Gallery <svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-images" viewBox="0 0 16 16">
+                        <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                        <path
+                            d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2M14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1M2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1z" />
+                    </svg></a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2024 L. Kevin Resendiz</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
